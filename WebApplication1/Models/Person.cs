@@ -14,7 +14,9 @@ namespace WebApplication1.Models
         [DisplayName("Фамилия")]
         public string LastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "EGN Required")]
+        [MinLength(10, ErrorMessage = "EGN is 10 digits lenght!")]
+        [MaxLength(10, ErrorMessage = "EGN number is 10 digits lenght!")]
         [DisplayName("ЕГН")]
         [EGNValidation]
         public long EGN { get; set; }

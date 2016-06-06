@@ -11,7 +11,9 @@ namespace WebApplication1.Models
 {
     public class Student : Person
     {
-        [Required]
+        [Required(ErrorMessage = "Faculty number required")]
+        [MinLength(10, ErrorMessage = "Faculty number is 10 digits lenght!")]
+        [MaxLength(10, ErrorMessage = "Faculty number is 10 digits lenght!")]
         [DisplayName("Факултетен номер")]
         public long Facuktetnumber { get; set; }
 

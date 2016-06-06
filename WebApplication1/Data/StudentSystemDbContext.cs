@@ -22,6 +22,8 @@ namespace WebApplication1.Data
         public DbSet<Facultet> Facultets { get; set; }
         public DbSet<Lecture> Lecturs { get; set; }
         public DbSet<Inspector> Inspectors { get; set; }
+        public DbSet<Student> studentLoginAccount { get; set; }
+
 
         public DbSet<TEntity> Set<TEntity>() where TEntity : class
         {

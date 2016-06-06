@@ -14,6 +14,8 @@ namespace WebApplication1.Data
         DbSet<SingIn> SingIns { get; set; }
         DbSet<Specialty> Specialties { get; set; }
         DbSet<Student> Students { get; set; }
+        DbSet<Student> studentLoginAccount { get; set; }
+
 
         DbSet<TEntity> Set<TEntity>() where TEntity : class;
         DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : class;
