@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "User Panel";
+}
+
+@if (Session["Факултетният номер"] != null)
+{
+    <h4>Hello Student with FN: @Session["Факултетният номер"].ToString() </h4>
+    <br />
+    <h4>Family name: @Session["Фамилия"].ToString() </h4>
+    <br />
+    <h4>Own EGN: @Session["ЕГН"].ToString() </h4>
+    <br />
+    <h4>You are in form of studying: @Session["Форма на обучение"].ToString() </h4>
+    <br />
+    <h4>You are in course: @Session["Курс"].ToString() </h4>
+    <br />
+    <h4>You are in group: @Session["Група"].ToString() </h4>
+    <br />
+    <h4>Representing inspector is: @Session["Инспектор"].ToString() </h4>
+    <br />
+    <h4>OKS: @Session["ОКС"].ToString() </h4>
+    <br />
+    <h4>Contemporary Email: @Session["Е-майл"].ToString() </h4>
+    <br />
+}
+
+<div id="button-back">
+@Html.ActionLink(linkText: "Log out", actionName: "Logout", controllerName: "Account")
+</div>
+
+<style>
+    #button-back {
+        font-family: Verdana, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: white;
+        background-color:black;
+        width: 65px;
+        padding: 8px 12px;
+        border: 1px solid black;
+        outline: none;
+        outline: 0;
+        border-radius: 2px;
+        text-align:center;
+    }
+</style>
