@@ -133,6 +133,7 @@
     <Compile Include="Controllers\LecturesController.cs" />
     <Compile Include="Controllers\SingInsController.cs" />
     <Compile Include="Controllers\SpecialtiesController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Data\IStudentSystemDbContext.cs" />
     <Compile Include="Data\StudentSystemDbContext.cs" />
     <Compile Include="Enum\Forma.cs" />
@@ -159,6 +160,7 @@
     <Compile Include="Repository\LectureRepository.cs" />
     <Compile Include="Repository\SingInRepository.cs" />
     <Compile Include="Repository\SpecialtyRepository.cs" />
+    <Compile Include="Repository\StudentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -215,6 +217,11 @@
     <Content Include="Views\SingIns\Details.cshtml" />
     <Content Include="Views\SingIns\Edit.cshtml" />
     <Content Include="Views\SingIns\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
