@@ -7,8 +7,11 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Repository
 {
-    class SpecialtyRepository : GenericRepository<Specialty>
+    class LectureRepository:GenericRepository<Lecture>
     {
+        public LectureRepository() : base()
+        {
 
+        }
     }
 }
