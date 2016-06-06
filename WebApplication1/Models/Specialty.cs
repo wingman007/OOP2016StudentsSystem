@@ -16,9 +16,11 @@ namespace WebApplication1.Models
         {
             this.lectures = new HashSet<Lecture>();
         }
+        [Range(1, 4.0)]
         [Required]
         [DisplayName("Време на обучение")]
         public int YearOFStudy { get; set; }
+        
 
         [Required]
         [DisplayName("Инспектор")]
