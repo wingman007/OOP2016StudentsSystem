@@ -18,7 +18,7 @@ namespace WebApplication1.Models
         public string Password { get; set; }
 
         [Required]
-        [DisplayName("Име")]
+        [DisplayName("Потребителско име")]
         public string UserName { get; set; }
 
         [Required]

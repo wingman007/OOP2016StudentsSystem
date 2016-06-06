@@ -131,6 +131,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InspectorsController.cs" />
     <Compile Include="Controllers\LecturesController.cs" />
+    <Compile Include="Controllers\SingInsController.cs" />
     <Compile Include="Controllers\SpecialtiesController.cs" />
     <Compile Include="Data\IStudentSystemDbContext.cs" />
     <Compile Include="Data\StudentSystemDbContext.cs" />
@@ -156,6 +157,7 @@
     <Compile Include="Repository\IGenericRepository.cs" />
     <Compile Include="Repository\InspectorRepository.cs" />
     <Compile Include="Repository\LectureRepository.cs" />
+    <Compile Include="Repository\SingInRepository.cs" />
     <Compile Include="Repository\SpecialtyRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +210,11 @@
     <Content Include="Views\Inspectors\Details.cshtml" />
     <Content Include="Views\Inspectors\Edit.cshtml" />
     <Content Include="Views\Inspectors\Index.cshtml" />
+    <Content Include="Views\SingIns\Create.cshtml" />
+    <Content Include="Views\SingIns\Delete.cshtml" />
+    <Content Include="Views\SingIns\Details.cshtml" />
+    <Content Include="Views\SingIns\Edit.cshtml" />
+    <Content Include="Views\SingIns\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
